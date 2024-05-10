@@ -1,0 +1,52 @@
+body{
+    background-color: #292b2c;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+#navbarTitle{
+    font-family: 'Square Peg', cursive;
+    font-size: 2em;
+    color: #F5F5DC;
+}
+
+#mainNavbar .nav-link:hover{
+   color: #F5F5DC;
+}
+
+h2{
+    font-family: 'Square Peg', cursive;
+    font-size: 3em;
+    color: #F5F5DC;
+}
+
+#container{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+#container.appear{
+    opacity: 1;
+}
+
+
+@media(min-width: 768px){
+    .from-left{
+        transform: translateX(-50%);
+    }
+    
+    .from-right{
+        transform: translateX(50%);
+    }
+    
+    .from-left,
+    .from-right{
+        transition: transform 1s ease-in;
+    }
+    
+    .from-left.appear,
+    .from-right.appear{
+        transform: translateX(0);
+    }
+}
+

@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    font-weight: normal;
+    /*font-weight: 400; same as above
+    font-weight: 700; is bold*/
+    text-decoration: rgb(5, 222, 5) underline wavy;
+    letter-spacing: 10px;
+    font-size: 80px;
+    /*if user doesn't have Arial, then Futura is second choice*/
+    font-family: Arial, Futura, sans-serif;
+    /*font-family: fantasy;
+    ^a family of fonts, consists of multiple fonts (a whole family of fonts)
+    */
+}
+
+a {
+    /*removes underline of link*/
+    text-decoration: none;
+}
+
+p {
+    line-height: 2;
+}

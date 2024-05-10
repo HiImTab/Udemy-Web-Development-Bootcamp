@@ -1,0 +1,76 @@
+/*root*/
+html {
+    font-size: 20px;
+}
+
+section {
+    background-color: #fefae0;
+    width: 800px;
+    height: 400px;
+}
+
+div {
+    background-color: #283618;
+    width: 75%;
+    height: 50%;
+}
+
+#ems h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    line-height: 200%;
+    /*similar to spacing between lines*/
+    /*200% of 40 = 80px*/
+}
+
+#ems h2 {
+    /*means font-size of h2 is twice the parent's
+    font-size which happens to be article*/
+    font-size: 2em;
+    /*goes off ^font-size and changes if font-size changes*/
+    margin-left: 1em;
+}
+
+#ems h3 {
+    font-size: 1.5em;
+}
+
+#ems {
+    font-size: 20px;
+}
+
+p {
+    /*same size as parent*/
+    font-size: 1em;
+    /*smaller than parent*/
+    /*     font-size: 0.8em; */
+}
+
+button {
+    background-color: #dda15e;
+    color: white;
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+}
+
+ul {
+    font-size: 1.5em;
+}
+
+/*rems go off root html element*/
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 0.8rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
+}

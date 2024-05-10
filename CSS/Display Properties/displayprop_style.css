@@ -1,0 +1,36 @@
+h1 {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    display: inline;
+    /*not ignored*/
+    width: 100px;
+    /*     display: none; */
+}
+
+/*
+span {
+    background-color: aliceblue;
+    border: 1px solid black;
+    display: block;
+}*/
+
+span {
+    background-color: blueviolet;
+    border: 1px solid black;
+    /*ignored on an inline element*/
+    /*****width and height aren't respected
+    with inline elements neither is padding
+    and margin******/
+    width: 500px;
+    /* padding: 100px; */
+}
+
+/*inline-block respects width/height/padding/margin*/
+div {
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    border: 5px solid black;
+    display: inline-block;
+    margin: 50px;
+}

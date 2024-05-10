@@ -1,0 +1,13 @@
+<%- include('partials/head')%>
+
+    <%- include('partials/navbar')%>
+        <h1>All The Cats</h1>
+        <ul>
+            <%for(let c of cats){%>
+                <li>
+                    <%= c %>
+                </li>
+                <%}%>
+        </ul>
+
+        <%- include('partials/footer')%>

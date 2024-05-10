@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+ .container{
+    /* background-color: #67037a; */
+    display: flex;
+    width: 70%;
+    height: 50vh;
+    margin: 0 auto; 
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.plans{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 28em;
+    height: 38em;
+   /* box-shadow: 5px 3px 15px 2px #67037a; */
+   box-shadow: 0 0 15px #67037a;
+}
+ 
+.title{
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-color: #67037a;
+    font-size: 3.8em;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    color: #000;
+    box-shadow: 0 0 15px #67037a;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0.1em 0 0.1em;
+}
+
+.includes{
+    margin-top: 20px;
+    font-size: 2.2em;
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.btns{
+    background-color: #67037a;
+    color: #fff;
+    border-radius: 10px;
+    border-color: #00ff1e;
+    width: 10em;
+    height: 4.5em;
+    font-weight: 700;
+    font-size: .9em;
+    letter-spacing: 1px;
+    margin-top: 2em;
+}
+
+.btns:hover{
+    /* background: linear-gradient(90deg, black, rgb(54, 54, 54) 40%, rgb(255, 255, 255)); */
+    background-color: #67037a;
+    color: #00ff1e;
+    border-color: #00ff1e;
+    box-shadow: 2px 2px 10px #00ff1e;
+    cursor: pointer;
+    transform: translateY(-0.25em);
+}
+
+.features{
+    margin: 40px 0 25px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.features-item{
+    margin: 30px 0 30px;
+}
+
+.features-pricing{
+    font-size: 3em;
+    color: #00ff1e;
+}
+
+.features-month{
+    margin-bottom: 30px;
+}
+
+
+@media(max-width: 1960px){
+    .container{
+        width: 100%;
+    }
+} 
+
+@media(max-width: 1360px){
+    .container{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .plans{
+        border-radius: 0;
+    }
+    .title{
+        border-radius: 0;
+    }
+}

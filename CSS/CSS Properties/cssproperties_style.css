@@ -1,0 +1,26 @@
+section {
+    width: 500px;
+    height: 500px;
+    background-color: chartreuse;
+}
+
+#rgba {
+    width: 50%;
+    height: 50%;
+    /*rgba transparency: 1(not(0%) transparent) 
+     0(100% transparent)*/
+    background-color: rgba(255, 255, 255, 0.5);
+    /*hexadecimal transparency: #00cca0 -> add FF
+    for no transparency at all or 00 for 100% transparency
+    so #00cca0b9*/
+}
+
+#opacity {
+    width: 50%;
+    height: 50%;
+    /*opacity: 1(not(0%) transparent) 
+     0(100% transparent)*/
+    background-color: yellow;
+    /*applies to entire element*/
+    opacity: 0.5;
+}

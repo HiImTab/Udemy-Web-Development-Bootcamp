@@ -1,0 +1,124 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+
+nav {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul,
+li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    /*     border: 1px solid red; */
+    flex: 1;
+    /*flex wont grow any further once it hits 50%*/
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*when window at 800px change
+h1 to papayawhip*/
+/* @media(width:800px) {
+    h1 {
+        color: papayawhip;
+    }
+} */
+
+/*at min of 800px and up, then
+change h1 color to blueviolet*/
+/* @media(min-width: 800px) {
+    h1 {
+        color: blueviolet;
+    }
+} */
+
+/* @media (min-width: 600px) and (max-width: 800px) {
+    h1 {
+        color: teal;
+    }
+} */
+
+/*order matters*/
+
+/* @media (max-width: 1000px) {
+    h1 {
+        color: yellow;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        color: orange;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        color: red;
+    }
+} */
+
+h1 {
+    color: red;
+}
+
+@media(min-width: 300px) {
+    h1 {
+        color: orange;
+    }
+}
+
+@media(min-width: 600px) {
+    h1 {
+        color: yellow;
+    }
+}
+
+@media(min-width: 900px) {
+    h1 {
+        color: greenyellow;
+    }
+}
+
+/* @media (orientation: landscape) {
+    body {
+        background-color: mediumslateblue;
+    }
+} */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    nav,
+    nav ul {
+        flex-direction: column;
+        /*left to right (cross axis)*/
+        align-items: center;
+    }
+
+    /*     nav ul {
+        flex-direction: column;
+        align-items: center;
+    } */
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 3em;
+    }
+}

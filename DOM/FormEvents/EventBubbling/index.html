@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventBubbling</title>
+
+    <!--apply a class called hide, to hide the entire div (should be in css)-->
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p onclick="alert('p clicked')">
+        I am a paragraph
+        <button onclick="alert('button clicked')">Click me</button>
+    </p>
+
+    <div id="container">
+        click to hide
+        <button id="yo">Change Color</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+img {
+    /*so it adjusts accordingly to window size*/
+    width: 30%;
+    /* 30 + 30 + 30
+    10% left to distribute between images*/
+
+    /*do not do this*/
+    /*margin: 20px; hard-coded not adjustable to window size*/
+
+    /* 6 total spots to distribute (including left and
+    right of each image) so 10% / 6 = 1.6666%*/
+    /* margin: 1.6666%; */
+    margin: calc(10%/6);
+}
+
+nav {
+    text-transform: uppercase;
+    border-bottom: 2px solid #f1f1f1;
+    width: 30%;
+    margin-left: calc(10%/6);
+    /*20px left and right, 0 top and bottom*/
+    padding: 1em 0;
+    font-family: 'Raleway', sans-serif;
+    /*almost never use percentages for font-sizes*/
+    font-size: 1.5em;
+}

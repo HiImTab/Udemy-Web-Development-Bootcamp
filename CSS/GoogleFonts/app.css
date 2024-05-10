@@ -1,0 +1,25 @@
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+h1+h2 {
+    /*decreasing space between h1 and h2*/
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+}

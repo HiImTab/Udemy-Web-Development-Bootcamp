@@ -1,0 +1,57 @@
+body {
+    /*getting rid of default margin on pg*/
+    margin: 0;
+}
+
+div {
+    width: 200px;
+    height: 400px;
+    background-color: #b8c0ff;
+}
+
+span {
+    margin-left: 20px;
+}
+
+h1 {
+    background-color: #b8c0ff;
+    width: 200px;
+    padding-left: 100px;
+    padding-top: 50px;
+    margin-bottom: 0;
+}
+
+#one {
+    background-color: #bbd0ff;
+    border-width: 5px;
+    border-color: #c8b6ff;
+    border-style: solid;
+    /*including the border in the size of element*/
+    /*therefore width will also include width of border*/
+    /* box-sizing: border-box; */
+    margin: 5px;
+}
+
+#two {
+    background-color: #c8b6ff;
+    border-width: 5px;
+    border-color: #e7c6ff;
+    border-style: dashed;
+    border-right-width: 8px;
+    border-bottom-right-radius: 10%;
+    padding-right: 50px;
+}
+
+#three {
+    background-color: #e7c6ff;
+    /*same as #one and #two but is one line instead of doing color, style, width, etc.*/
+    border: 6px solid #bbd0ff;
+    border-radius: 50%;
+}
+
+button {
+    /*vertical horizontal*/
+    padding: 0 20px;
+    /*top right bottom left (clockwise)*/
+    /*padding: 10px 20px 30px 40px;*/
+}

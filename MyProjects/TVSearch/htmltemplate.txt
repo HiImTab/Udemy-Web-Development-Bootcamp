@@ -1,0 +1,127 @@
+    <!--hardcoded show-->
+    <div id="showContainer" class="px-3">
+
+        <div id="showImg">
+            <img src="3.jpg" alt="show image" id="img">
+        </div>
+
+        <div id="showSummary">
+            <h3 id="showTitle">Game of Thrones</h3>
+
+            <p>
+                Based on the bestselling book series A Song of Ice and Fire by George R.R. Martin, this sprawling new
+                HBO
+                drama is set in a world where summers span decades and winters can last a lifetime. From the scheming
+                south
+                and the savage eastern lands, to the frozen north and ancient Wall that protects the realm from the
+                mysterious darkness beyond, the powerful families of the Seven Kingdoms are locked in a battle for the
+                Iron
+                Throne. This is a story of duplicity and treachery, nobility and honor, conquest and triumph. In the
+                Game of
+                Thrones, you either win or you die.
+            </p>
+
+            <div class="moreInfo">
+                <button id="cast" class="btn btn-success mt-3 mx-1 px-3">
+                    Cast
+                </button>
+                <button id="eps" class="btn btn-success mt-3 mx-1 px-3">
+                    Episode List
+                </button>
+                <button id="seasons" class="btn btn-success mt-3 mx-1 px-3">
+                    Seasons
+                </button>
+            </div>
+
+        </div>
+
+        <div id="showInfo">
+            <p>Premiered: 2011-04-17</p>
+            <p>Status: Ended on 2019-05-19</p>
+            <p>Genre(s): Drama, Adventure, Fantasy</p>
+            <p>Rating: 9/10</p>
+        </div>
+    </div>
+
+
+
+    <!--hardcoded cast-->
+    <h1 id="castTitle" class="px-3">Game Of Thrones Cast</h1>
+    <div id="castContainer">
+        <div id="castImg">
+            <img src="c2.jpg" alt="cast image" id="img">
+        </div>
+        <div id="nameContainer">
+            <h3 id="actorName">Emilia Clarke</h3>
+            <h3 id="charName"><span id="as">as</span> Daenerys Targaryen</h3>
+        </div>
+    </div>
+
+
+    <!--new hardcoded cast-->
+    <h1 id="castTitle" class="px-3">Game Of Thrones Cast</h1>
+    <div id="castContainer">
+        <div id="castImg" class="px-3">
+            <img src="c2.jpg" alt="cast image" id="img" class="py-1">
+            <h3 id="actorName">Emilia Clarke</h3>
+            <h3 id="charName"><span id="as">as</span> Daenerys Targaryen</h3>
+        </div>
+    </div>
+
+
+
+    <!--hardcoded season-->
+    <div id="seasonContainer" class="px-3">
+
+        <div id="showImg">
+            <img src="s1.jpg" alt="season image" id="img">
+        </div>
+
+        <div id="seasonSummary">
+            <h3 id="seasonTitle">Season 1</h3>
+
+            <p>
+                Lord Eddard Stark is asked by his old friend, King Robert Baratheon, to serve as the King's Hand
+                following the death of the previous incumbent, Eddard's mentor Jon Arryn. Eddard is reluctant, but
+                receives intelligence suggesting that Jon was murdered. Eddard accepts Robert's offer, planning to use
+                his position and authority to investigate the alleged murder.
+            </p>
+        </div>
+    </div>
+
+
+        <!--hardcoded episodes for 1 season-->
+    <div id="tableContainer">
+        <h2 id="epSeason">Season 1</h2>
+        <table class="table table-striped table-primary table-sm table-bordered" id="table">
+            <thead>
+                <tr>
+                    <th scope="col">Episode</th>
+                    <th scope="col">Airdate</th>
+                    <th scope="col">Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>December 25, 2022</td>
+                    <td>Pilot</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>December 25, 2022</td>
+                    <td>Pilot</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>December 25, 2022</td>
+                    <td>Pilot</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>December 25, 2022</td>
+                    <td>Pilot</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

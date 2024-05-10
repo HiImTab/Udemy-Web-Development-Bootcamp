@@ -1,0 +1,139 @@
+/*universal selector*/
+/* {
+    background-color: rgb(38, 37, 37);
+    color: whitesmoke;
+}*/
+
+body {
+    background-color: rgb(38, 37, 37);
+    color: whitesmoke;
+}
+
+button {
+    font-size: 20px;
+    background-color: rgb(128, 124, 212);
+}
+
+/*id selector*/
+#signup {
+    background-color: rgb(59, 56, 97);
+    color: whitesmoke;
+}
+
+h1,
+h2 {
+    color: crimson;
+}
+
+span {
+    color: rgb(255, 255, 255);
+}
+
+/*class selector*/
+.tag {
+    background-color: black;
+    font-size: 18px;
+}
+
+/*descendant selector
+select all <a>'s that are nested inside <li>*/
+footer a {
+    color: #FFF;
+}
+
+.post a {
+    color: aqua;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/*adjacent selector
+select only the buttons that are immediately 
+proceeded by an <h2>*/
+
+h2+button {
+    font-size: 20px;
+    background-color: darkmagenta;
+}
+
+/*direct child
+select only the <a>'s that are direct children
+of a <footer> element*/
+
+footer>a {
+    color: darkmagenta;
+}
+
+/*attribute selector
+select all input elements where the type 
+attribute is set to "password"*/
+input[type="password"] {
+    color: rebeccapurple;
+}
+
+/*
+section[class="post"] {
+    background-color: blue;
+}
+section.post{} ^^same 
+*/
+
+/*a[href$=".org"] means <a> elements with an href
+ending with .org
+*/
+
+/*<a> elements with an href containing "google"*/
+a[href*="google"] {
+    color: gray;
+}
+
+/*pseudo classes*/
+.post button:hover {
+    background-color: cyan;
+    color: white;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: crimson;
+}
+
+/*every other .post is lighter*/
+.post:nth-of-type(2n) {
+    background-color: rgb(56, 56, 56);
+}
+
+/*psuedo elements*/
+h2::first-letter {
+    font-size: 40px;
+}
+
+p::first-line {
+    color: crimson;
+}
+
+/*changes when you highlight text on page*/
+::selection {
+    background-color: darkmagenta;
+}
+
+/*the more specific a selector is, the more
+priority it has (line 91 beats line 125 style)*/
+/* order of specificity from greatest to least
+ID > class > element
+(if ever confused, use specificity calculator)*/
+/*sign up button doesn't change line 18 because it
+very specific since it an id*/
+
+/*!important overrides BUT DO NOT USE*/
+
+
+button:hover {
+    background-color: aquamarine
+        /*!important*/
+    ;
+    /*font-size: 10px;*/
+}

@@ -1,0 +1,52 @@
+div {
+    background-color: navy;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: inline-block;
+}
+
+
+#middle {
+    background-color: aquamarine;
+}
+
+/*default position is static*/
+#static #middle {
+    position: static;
+    top: 100px;
+}
+
+#relative #middle {
+    position: relative;
+    top: 50px;
+    right: -50px;
+    /*left: 50px (does the same thing^^)*/
+}
+
+#absolute {
+    position: relative;
+}
+
+/*no space is created for the element in the page layout*/
+/*its position is relative to its closest positioned ancestor(if any)
+otherwise it is placed relative to the initial containing block*/
+#absolute #middle {
+    position: absolute;
+    /*ancestor is #absolute line 28*/
+    top: 1px;
+    left: 1px;
+}
+
+/*no space is created for element like absolute*/
+/*it is positioned relative to the initial containing block*/
+/*great for a nav bar that stays on top when you
+scroll down page*/
+#fixed #middle {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+/*sticky is another position style*/

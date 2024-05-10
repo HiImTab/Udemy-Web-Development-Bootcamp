@@ -1,0 +1,121 @@
+body{
+    background-color: #2b2d42;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+#mainNavbar{
+    background-color: #ff1a0a;
+}
+
+#navbarTitle{
+    font-size: 2em;
+    font-family: 'Square Peg', cursive;
+}
+
+#chicken{
+    width: 2em;
+    height: 2em;
+}
+#meatballs{
+    width: 3em;
+    height: 3em;
+}
+
+#container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: url(images/coverimg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.search-bar{
+    width: 75%;
+    height: 25%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    backdrop-filter: blur(0.4em) saturate(180%);
+    margin: 25% auto;
+    margin-bottom: 20%;
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;   
+    outline: none;
+    padding: 1em 1em;
+    font-size: 1.4em;
+    color: #EDF2F4;
+}
+
+::placeholder{
+    color: #EDF2F4;
+}
+
+.search-bar button img{
+    width: 1em;
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    background: #EDF2F4;
+    cursor: pointer;
+}
+
+h2{
+    font-family: 'Square Peg', cursive;
+    font-size: 3em;
+    color: #ff1a0a;
+}
+
+
+@media(max-width: 1400px){
+    .search-bar{
+        padding: 0.1em 0.5em;
+    }
+}
+@media(max-width: 1000px){
+    .search-bar{
+        padding: 0.5em 0.5em;
+    }
+    .search-bar input{
+        font-size: 1em;
+    }
+    .search-bar button {
+        width: 3em;
+        height: 3em;
+    }
+}
+
+@media(max-width: 770px){
+    #chicken{
+        width: 2em;
+        height: 2em;
+    }
+    #meatballs{
+        width: 3em;
+        height: 3em;
+    }
+    #navbarTitle{
+        font-size: 2em;
+    }
+    .search-bar{
+        margin: 25% auto;
+        margin-bottom: 15%;
+        padding: 0.1em 0.5em;
+        width: 100%;
+    }
+    .search-bar button {
+        width: 3em;
+        height: 3em;
+    }
+} 

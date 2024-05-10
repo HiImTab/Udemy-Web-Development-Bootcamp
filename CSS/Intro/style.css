@@ -1,0 +1,18 @@
+h2 {
+    color: indigo;
+    background-color: aquamarine;
+}
+
+button {
+    color: magenta;
+    background-color: rgb(89, 151, 0);
+}
+
+p {
+    color: #5FCFFC;
+}
+
+body {
+    /*same as #00000, also #c5e == #cc55ee*/
+    background-color: #000;
+}

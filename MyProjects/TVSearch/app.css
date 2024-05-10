@@ -1,0 +1,148 @@
+body{
+    background: rgb(82,129,228);
+    background: linear-gradient(90deg, rgba(82,129,228,1) 0%, rgba(87,241,218,1) 90%);
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+
+#showContainer,
+#seasonContainer{
+    background-color: rgba(0,0,0,.1);
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    border: 1px solid #fff;
+}
+
+#nameContainer{
+    padding: 1em;
+}
+
+#castContainer{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0 5em 3em;
+}
+
+#castImg{
+    background-color: rgba(0,0,0,.1);
+    margin: 1em 0 3em;
+    text-align: center;
+    padding-top: 1em;
+    width: 25%;
+    border: 1px solid #fff;
+}
+
+#castTitle{
+    padding-left: .5em;
+}
+
+#showContainer:not(:first-of-type),
+#seasonContainer:not(:first-of-type){
+    border-bottom-style: none;
+}
+
+#showContainer:last-of-type,
+#seasonContainer:last-of-type{
+    border-bottom-style: solid;
+}
+
+#showSummary{
+    padding: 1em;
+    flex: 4 0 0;
+}
+
+#seasonSummary{
+    padding: 1em;
+}
+
+#showInfo{
+    background-color: rgba(0,0,0,.1);
+    padding:.5em;
+}
+
+#nav{
+    background-color: rgb(46, 71, 126); 
+}
+
+#error{
+    text-align: center;
+}
+
+#as{
+    font-weight: 300;
+}
+
+#tableContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#epSeason{
+    width: 90%;
+} 
+
+#table{
+    width: 90%;
+    text-align: center;
+    table-layout: fixed;
+}
+
+@media(max-width: 1200px){
+
+    #castContainer{
+        flex-direction: column;
+        align-items: none;
+        width: 100%;
+        padding: 2em;
+        padding-top: 1em;
+    }
+    #castImg{
+        width: 100%;
+        margin: 0;
+    }
+    #castImg:not(:first-of-type){
+        border-top-style: none;
+    }
+    #castImg:last-of-type{
+        border-bottom-style: solid;
+    }
+    #castTitle{
+        text-align: center;
+    }
+}
+
+@media(max-width: 900px){
+
+    #showContainer,
+    #seasonContainer{
+        flex-direction: column;
+    }
+    #showSummary,
+    #nameContainer,
+    #seasonSummary{
+        text-align: center;
+    }
+    #epSeason{
+        width: 100%;
+        text-align: center;
+    } 
+    #castContainer{
+        padding: 2em;
+    }
+}
+
+@media(max-width: 390px){
+    #castContainer{
+        flex-direction: column;
+        align-items: none;
+        width: 100%;
+    }
+    #charName, #actorName{
+        font-size: 1.5em;
+    }
+}

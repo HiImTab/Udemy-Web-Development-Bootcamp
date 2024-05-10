@@ -1,0 +1,97 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+/*up to down - main axis*/
+/*left to right - cross axis*/
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    /*turn on flex box*/
+    display: flex;
+    /* flex-direction: row-reverse; */
+
+    /*row or col*/
+    flex-direction: row;
+
+    /*goes to new line if not enough space on line
+    wraps elements*/
+    /* flex-wrap: wrap-reverse; */
+    /* flex-wrap: wrap; */
+
+    /*left or right or center*/
+    /*also changes inbetween*/
+    /*Main Axis*/
+    justify-content: center;
+
+    /*top or bottom or center - cross-axis*/
+    align-items: flex-start;
+
+    /* flex-wrap: wrap; */
+    /*only when we have flexwrap or flexwrap reverse*/
+    /* align-content: center; */
+}
+
+/*flex-basis: initial size of an element before
+additional space is distributed
+flex-grow: amount of available space an element
+should take up
+flex-shrink: if items are larger than container, they
+shrink according to flex shrink*/
+
+#container div {
+    width: 200px;
+    height: 200px;
+    /*max that flex grows to*/
+    /*  max-width: 300px; */
+    flex-basis: 200px;
+    /* flex-grow: 1; */
+}
+
+div:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+div:nth-of-type(5) {
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+
+/* div:nth-of-type(3) {
+    align-self: center;
+}
+
+div:nth-of-type(2) {
+    align-self: flex-end;
+} */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: #6930c3;
+    border: 2px solid white;
+    /*flex-basis flex-grow*/
+    /* flex: 1 300px; */
+    /*flex-basis flex-shrink flex-grow*/
+    flex: 1 2 300px;
+}
+
+main .maincontent {
+    background-color: #80ffdb;
+    /* flex: 2 800px; */
+    flex: 2 1 800px;
+}
